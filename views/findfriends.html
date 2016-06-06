@@ -1,0 +1,31 @@
+<header class="initial-header">
+      <div class="back-icon-container" ui-sref="myprofile">
+        <img src="../img/Icons/Back-Arrow.svg" alt="" />
+      </div>
+  		<p>DevMountain</p>
+      <search-bar></search-bar>
+</header>
+<section class="two-column-view">
+    <div class="left-column" id='loggedInUserProfile'>
+      <p id='my-profile-name'>
+        <span id='my-profile-first-name'</span>{{loggedInUser.name}}</span>
+      </p>
+      <p id="my-profile-tagline">
+        {{loggedInUser.tagline}}
+      </p>
+      <p id="my-profile-bio">
+        {{loggedInUser.bio}}
+      </p>
+    </div>
+    <div class="new-friends-images-column">
+      <div class="search-bar">
+        <input class="new-friends-search-bar-input" ng-model="friendSearchFilter" type="text" placeholder="Search For Friends"/>
+      </div>
+
+      <div class="friends-images-grid">
+        <div class="friend-image" ng-repeat="user in usersMinusFriends | filter: friendSearchFilter track by user._id">
+          <img profile-pic ng-src="{{user.profileUrl}}" ui-sref="profile({id: user._id})"/>
+        </div>
+      </div>
+    </div>
+</section>

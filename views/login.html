@@ -1,0 +1,28 @@
+<header class="initial-header">
+    <div class="search-icon-container">
+      <img src="../img/Icons/Search.svg" alt="" />
+    </div>
+		<p>DevMountain</p>
+    <div class="hamburger-menu-container">
+      <img src="../img/Icons/Ham.svg" alt="" />
+    </div>
+	</header>
+
+  <section class="two-column-view">
+    <div class="left-column" id="log-in-left-column">
+      <p>Log In to Your DevMountain Account</p>
+      <div class="login-fields-container">
+        <input id="name-input" ng-model="logInName" placeholder="Full Name" ng-keyup="logIn(logInName)">
+      </div>
+        <a ng-click="updateLoggedInUser()" ui-sref="{{viewAfterLoginTry}}"><button id="registration-save-changes-button">Log In</button></a>
+        <a id='switch-to-register-button' ui-sref='register'>Don't have an account? Register</a>
+    </div>
+    <div class="triangle-images-column">
+      <div id="triangle-up">
+        <img src="" alt="" />
+      </div>
+      <div id="triangle-left">
+        <img src="" alt="" />
+      </div>
+    </div>
+  </section>

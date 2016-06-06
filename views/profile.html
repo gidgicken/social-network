@@ -1,0 +1,32 @@
+<header ng-init="updateSelectedFriend()" class="initial-header">
+      <div class="back-icon-container">
+        <img src="../img/Icons/Back-Arrow.svg" ui-sref='findfriends' alt="" />
+      </div>
+  		<p>DevMountain</p>
+      <!-- <div class="search-icon-container">
+        <img src="../img/Icons/Search.svg" alt="" />
+      </div> -->
+      <search-bar></search-bar>
+</header>
+<section class="two-column-view" id="friend-profile-view">
+        <div class="left-column" id="friend-left-column">
+          <p id='my-profile-name'>
+            <span id='my-profile-first-name'</span>{{selectedFriend.name}}</span>
+          </p>
+          <p id="my-profile-tagline">
+            {{selectedFriend.tagline}}
+          </p>
+          <p id="my-profile-bio">
+            {{selectedFriend.bio}}
+          </p>
+          <button ng-hide="isCurrentFriend(selectedFriend._id)" id="add-friend-button" ng-click="addFriend()" ui-sref="myfriends">ADD FRIEND</button>
+        </div>
+      <div class="triangle-images-column" id="friend-triangle-column">
+        <div id="triangle-up">
+          <img src="" alt="" />
+        </div>
+        <div id="triangle-left">
+          <img src="" alt="" />
+        </div>
+      </div>
+</section>

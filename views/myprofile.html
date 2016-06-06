@@ -1,0 +1,35 @@
+<header class="initial-header">
+      <div class="dropdown">
+        <div class="profile-icon-container">
+          <img ng-src="{{loggedInUser.profileUrl}}" alt="" />
+        </div>
+        <div class="dropdown-content">
+          <img ng-src="{{loggedInUser.profileUrl}}" alt="" />
+          <button id="log-out-button" ui-sref='register'>Log Out</button>
+        </div>
+      </div>
+  		<p>DevMountain</p>
+      <search-bar></search-bar>
+</header>
+
+<section class="two-column-view">
+      <div class="left-column" id='loggedInUserProfile'>
+        <p id='my-profile-name'>
+          <span id='my-profile-first-name'</span>{{loggedInUser.name}}</span>
+        </p>
+        <p id="my-profile-tagline">
+          {{loggedInUser.tagline}}
+        </p>
+        <p id="my-profile-bio">
+          {{loggedInUser.bio}}
+        </p>
+      </div>
+      <div class="triangle-images-column">
+        <div id="triangle-up">
+          <img src="" alt="" />
+        </div>
+        <div id="triangle-left">
+          <img ng-src="" alt="" />
+        </div>
+      </div>
+</section>

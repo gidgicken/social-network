@@ -1,0 +1,36 @@
+<header class="initial-header">
+      <div class="back-icon-container" ui-sref='myprofile'>
+        <img src="../img/Icons/Back-Arrow.svg" alt="" />
+      </div>
+  		<p>DevMountain</p>
+      <!-- <div class="search-icon-container">
+        <img src="../img/Icons/Search.svg" alt="" />
+      </div> -->
+      <search-bar></search-bar>
+</header>
+<section class="two-column-view">
+    <div class="left-column" id='loggedInUserProfile'>
+      <p id='my-profile-name'>
+        <span id='my-profile-first-name'</span>{{loggedInUser.name}}</span>
+        <!-- <span id='my-profile-first-name'</span>Jordan Allen</span> -->
+      </p>
+      <p id="my-profile-tagline">
+        {{loggedInUser.tagline}}
+        <!-- This the tagline -->
+      </p>
+      <p id="my-profile-bio">
+        {{loggedInUser.bio}}
+        <!-- This is the bio -->
+      </p>
+    </div>
+    <div class="update-profile-column">
+        <div class="update-profile-bar"><p>Profile Settings</p></div>
+        <div class="input-fields-container">
+          <input id="name-input" ng-model="newName" placeholder="Full Name">
+          <input id="tagline-input" ng-model="newTagline" placeholder="Tagline">
+          <input id="profile-image-input" ng-model="newProfileUrl" placeholder="Profile Image Url">
+          <input id="bio-input" ng-model="newBio" placeholder="Bio">
+        </div>
+        <div id='save-changes-bar' class="update-profile-bar" ng-click="updateInfo(newName, newTagline, newProfileUrl, newBio); updateLoggedInUser()" ui-sref="myprofile"><p>Save Changes</p></div>
+      </div>
+</section>

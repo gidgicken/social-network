@@ -1,0 +1,35 @@
+<header class="initial-header">
+    <div class="search-icon-container">
+      <img src="../img/Icons/Search.svg" alt="" />
+    </div>
+		<p>DevMountain</p>
+    <div class="hamburger-menu-container">
+      <img src="../img/Icons/Ham.svg" alt="" />
+    </div>
+	</header>
+
+  <section class="two-column-view">
+    <div class="left-column" id='register-left-column'>
+      <p>Welcome to <a href="">DevMountain</a> Social</br>Add Some Info So Friends Can Find You</p>
+      <div class="input-fields-container">
+        <input id="name-input" ng-model="nameEntered" placeholder="Full Name">
+        <input id="tagline-input" ng-model="taglineEntered" placeholder="Tagline">
+        <input id="profile-image-input" ng-model="imageEntered" placeholder="Profile Image Url">
+        <input id="bio-input" ng-model="bioEntered" placeholder="Bio">
+      </div>
+      <a ui-sref="myprofile" ng-click="addUser(nameEntered, taglineEntered, imageEntered, bioEntered); updateLoggedInUser()"><button id="registration-save-changes-button">Save Changes</button></a>
+
+
+        <a id='switch-to-log-in-button' ui-sref='login'>Already have an account? Log In</a>
+
+    </div>
+
+    <div class="triangle-images-column">
+      <div id="triangle-up">
+        <img src="" alt="" />
+      </div>
+      <div id="triangle-left">
+        <img src="" alt="" />
+      </div>
+    </div>
+  </section>
