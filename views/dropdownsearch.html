@@ -2,11 +2,11 @@
   <img ng-src='../../img/Icons/Search.svg' alt='' />
   <div class="dropdown-content2">
     <input class="friends-search-bar-input" id='dropdown-search-input' type="text" placeholder="Search Users..." ng-model="friendfilter">
-    <div ng-repeat="user in usersMinusSelf | filter: friendfilter" class="drop-down-profile-demo" ng-click="changeView(user._id)">
-      <div id="dropdown-name-container" ng-click="changeView(user._id)">
-        <p class="dropdown-search-friends" ng-click="changeView(user._id)">{{user.name}}</p>
+    <div ng-repeat="user in usersMinusSelf | filter: friendfilter" class="drop-down-profile-demo" ng-click="changeView(user._id); test()">
+      <div id="dropdown-name-container">
+        <p class="dropdown-search-friends">{{user.name}}</p>
       </div>
-      <div class="hover-profile-dropdown-content" ng-click="changeView(user._id)">
+      <div class="hover-profile-dropdown-content">
         <img ng-src="{{user.profileUrl}}">
         <p>{{user.tagline}}</p>
       </div>

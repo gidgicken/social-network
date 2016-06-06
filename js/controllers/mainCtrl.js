@@ -7,4 +7,5 @@ angular.module('app').controller('mainCtrl', function($scope, usersService){
     $scope.usersMinusSelf = usersService.getUsersMinusSelf();
   }
   $scope.changeView = usersService.changeView;
+  $scope.test = usersService.test;
 })

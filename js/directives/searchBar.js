@@ -2,6 +2,9 @@ angular.module('app').directive('searchBar', function(){
   return {
     restrict: 'E',
     templateUrl: "../../views/dropdownsearch.html",
+    // scope: {
+    //   value: "=", onEdit: '&'
+    // },
     link: function(scope, element, attrs){
       element.css({
         'display': 'inline-clock',

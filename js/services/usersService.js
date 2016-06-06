@@ -133,7 +133,6 @@ angular.module('app').service('usersService', function($http){
     }
   }
 
-
   this.fillUsers = function(){
     if(!localStorage.getItem('localStoreUsers')){
       self.addUser('Kevin Durant', 'Just clutch enough to win 3. Not clutch enough to win it all', 'http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254', 'Kevin Wayne Durant (born September 29, 1988) is an American professional basketball player for the Oklahoma City Thunder of the National Basketball Association (NBA). He has played the small forward position for the Thunder, formerly the Seattle SuperSonics. Durant has won an NBA Most Valuable Player Award, four NBA scoring titles, the NBA Rookie of the Year Award, and an Olympic gold medal. He has also been selected to six All-NBA teams and seven All-Star teams.');

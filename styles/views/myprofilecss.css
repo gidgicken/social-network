@@ -184,7 +184,7 @@
   max-height: 60vh;
 }
 .drop-down-profile-demo {
-  border-bottom: 2px solid #ECECEC;
+  /*border-bottom: 2px solid #ECECEC;*/
   width: 100%;
   min-height: 150px;
   display: flex;
@@ -195,8 +195,11 @@
   margin-top: -10px;
 }
 .drop-down-profile-demo:hover {
-  font-weight: bold;
-  background: #ECECEF;
+  font-weight: 700;
+  /*background: #lightgrey;*/
+}
+.drop-down-profile-demo:hover .hover-profile-dropdown-content {
+  background: lightgrey;
 }
 #dropdown-search-input {
   display: fixed;
